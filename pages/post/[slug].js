@@ -24,7 +24,6 @@ export async function getStaticPaths(){
 export async function getStaticProps({params}){
   // 위에서 만들어진 정적페이지에서 데이터를 받아 컴포넌트에 넣어 준다.
   // getStaticPaths로 페이지가 만들어진 경우 getStaticPorps의 porps로 데이터(위의 params에 해당하는 부분이)가 들어온다.
-
   const {slug} = params;
   const posts = await new SanityService().getPosts();
   const post = posts.find(p => p,slug === slug);

@@ -3,7 +3,7 @@ import sanityClient from '@sanity/client';
 export default class SanityService {
   _client =  sanityClient({
     dataset: 'production',
-    projectId: 'jf4p39i0',
+    projectId: '0coznrk3',
     useCdn: process.env.NODE_ENV === 'production',
   })
 
