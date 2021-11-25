@@ -1,5 +1,5 @@
 {
-  "name": "my-blog",
+  "name": "new-blog",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@sanity/client": "^2.21.10",
+    "antd": "^4.17.1",
+    "dayjs": "^1.10.7",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
