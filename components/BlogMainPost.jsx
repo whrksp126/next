@@ -16,6 +16,7 @@ export default function BlogMainPost({slug, thumbnail, title, subtitle, author, 
             <Card 
               style={{border: 'none'}}
               cover={<img alt={thumbnail.alt} src={thumbnail.imageUrl} />}
+              // Img 메소드를 사용해야함
             >
               <h1>{title}</h1>
               <h3>{subtitle}</h3>

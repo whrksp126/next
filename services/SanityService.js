@@ -4,6 +4,7 @@ export default class SanityService {
   _client =  sanityClient({
     dataset: 'production',
     projectId: 'oheiyaq3',
+    // depoly가 잘 됐는지 확인하고 진행해야함
     useCdn: process.env.NODE_ENV === 'production',
   })
 

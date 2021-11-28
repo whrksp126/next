@@ -31,6 +31,7 @@ export default function BlogList({posts}){
                       alt={post.thumbnail.alt} 
                       src={post.thumbnail.imageUrl}
                     />
+                    //Img 메소드를 사용해야함
                   }
                 >
                   <h3>{post.title}</h3>
