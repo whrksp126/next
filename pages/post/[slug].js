@@ -1,8 +1,19 @@
 import SanityService from "../../services/SanityService";
+import styles from '../../styles/Home.module.css'
+import Header from '../../components/Header'
+import BlogMainPost from '../../components/BlogMainPost'
+import Footer from '../../components/Footer'
+import BlogPostDetail from '../../components/BlogPostDetail'
+
 export default function PostAll({slug, post}){
   console.log(post)
   return (
-    <div><h1>Post : {slug}</h1></div>
+    <div className={styles.container}>
+    <Header/>
+    <BlogMainPost {...post}/>
+    <BlogPostDetail blocks={post.content} />
+    <Footer />
+  </div>
   )
 }
 export async function getStaticPaths(){
